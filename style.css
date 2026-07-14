@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #eaf7ef 0%, #f5fff9 100%);
+  color: #1f3d2e;
+}
+
+.app-shell {
+  max-width: 520px;
+  margin: 2rem auto;
+  padding: 1.8rem 1.6rem;
+  background: #ffffff;
+  border: 1px solid #d5e8db;
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(32, 52, 32, 0.08);
+}
+
+header h1 {
+  margin: 0 0 0.4rem;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+  color: #4b6b56;
+}
+
+.todo-input-area {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.6rem 0 1.3rem;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 0.95rem 1rem;
+  border: 1px solid #c8dfc9;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+}
+
+#todo-input:focus {
+  border-color: #6dbf8c;
+  box-shadow: 0 0 0 4px rgba(109, 191, 140, 0.18);
+}
+
+#add-button {
+  padding: 0 1.4rem;
+  border: none;
+  border-radius: 12px;
+  background: #4cae6f;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#add-button:hover {
+  background: #408e57;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.1rem;
+  margin-bottom: 0.9rem;
+  background: #f7fcf8;
+  border: 1px solid #d8e9dc;
+  border-radius: 14px;
+}
+
+.todo-item:last-child {
+  margin-bottom: 0;
+}
+
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.todo-label {
+  font-size: 1rem;
+  color: #21472f;
+}
+
+.todo-label.completed {
+  color: #7d8b80;
+  text-decoration: line-through;
+}
+
+.todo-actions button {
+  border: none;
+  padding: 0.55rem 0.85rem;
+  border-radius: 10px;
+  background: #f4f4f4;
+  color: #4b4b4b;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.todo-actions button:hover {
+  background: #e7f0e8;
+}
+
+.todo-actions button.delete {
+  background: #fdecea;
+  color: #a83c3c;
+}
+
+.todo-actions button.delete:hover {
+  background: #f7d7d5;
+}
+
+.empty-state {
+  text-align: center;
+  color: #6f8b74;
+  padding: 2rem 1rem;
+}
