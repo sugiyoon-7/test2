@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>학생용 할 일 관리 앱</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>학생용 할 일 관리</h1>
+      <p>오늘 할 일을 추가하고 완료 여부를 확인해보세요.</p>
+    </header>
+
+    <section class="todo-input-area">
+      <input id="todo-input" type="text" placeholder="할 일을 입력하세요" />
+      <button id="add-button" type="button">추가하기</button>
+    </section>
+
+    <section>
+      <ul id="todo-list" class="todo-list"></ul>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
